@@ -27,4 +27,4 @@ const propsInterceptor = (options) => {
     };
 };
 
-export default interceptor;
+export default propsInterceptor;
