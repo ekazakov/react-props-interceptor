@@ -25,7 +25,7 @@ describe('Intercept props actions', () => {
         const CompFoo1 = interceptor()(ComponentFoo);
         const wrapper = mount(<CompFoo1 />);
 
-        expect(wrapper.name()).toEqual('Interceptor(ComponentFoo)');
+        expect(wrapper.name()).toEqual('PropsInterceptor(ComponentFoo)');
     });
 
     // it('lifecycle hooks', () => {

@@ -1,7 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-// var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const BabiliPlugin = require("babili-webpack-plugin");
 
 module.exports = {
     entry: './src/PropsInterceptor.js',
@@ -11,24 +9,24 @@ module.exports = {
         library: 'PropsInterceptor',
         libraryTarget: 'umd'
     },
-    // externals: {
-    //     react: {
-    //         commonjs: 'react',
-    //         commonjs2: 'react',
-    //         amd: 'react',
-    //         root: 'React'
-    //     },
-    //     "lodash/mapValues": {
-    //         commonjs: 'lodash/mapValues',
-    //         commonjs2: 'lodash/mapValues',
-    //         amd: 'lodash/mapValues',
-    //     },
-    //     "lodash/includes": {
-    //         commonjs: 'lodash/includes',
-    //         commonjs2: 'lodash/includes',
-    //         amd: 'lodash/includes',
-    //     },
-    // },
+    externals: {
+        react: {
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            root: 'React'
+        },
+        // "lodash/mapValues": {
+        //     commonjs: 'lodash/mapValues',
+        //     commonjs2: 'lodash/mapValues',
+        //     amd: 'lodash/mapValues',
+        // },
+        // "lodash/includes": {
+        //     commonjs: 'lodash/includes',
+        //     commonjs2: 'lodash/includes',
+        //     amd: 'lodash/includes',
+        // },
+    },
     module: {
         loaders: [
             {
