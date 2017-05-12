@@ -1,12 +1,22 @@
 {
   "name": "react-props-interceptor",
-  "version": "0.0.1",
-  "private": true,
-  "main": "dist/PropsInteceptor.js",
-  "dependencies": {
+  "version": "1.0.0",
+  "description": "Simple react component props interceptor/decorator",
+  "keywords": [
+    "react",
+    "props",
+    "decorator",
+    "interceptor"
+  ],
+  "repository": "https://github.com/ekazakov/react-props-interceptor",
+  "license": "MIT",
+  "author": "Evgeniy Kazakov <evgeniy.kazakov@gmail.com>",
+  "main": "dist/PropsInterceptor.js",
+  "peerDependencies": {
+    "react": "^15.5.4",
     "lodash": "^4.17.4",
     "lodash-es": "^4.17.4",
-    "recompose": "^0.23.1"
+    "recompose": "^0.23.3"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -16,12 +26,11 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "enzyme": "^2.8.2",
-    "jest": "^19.0.2",
-    "react": "^15.5.4",
+    "jest": "^20.0.1",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4",
-    "webpack": "^2.5.0"
+    "webpack": "^2.5.1"
   },
   "scripts": {
     "build:es5": "webpack",
