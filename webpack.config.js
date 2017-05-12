@@ -9,24 +9,16 @@ module.exports = {
         library: 'PropsInterceptor',
         libraryTarget: 'umd'
     },
-    externals: {
-        react: {
-            commonjs: 'react',
-            commonjs2: 'react',
-            amd: 'react',
-            root: 'React'
-        },
-        // "lodash/mapValues": {
-        //     commonjs: 'lodash/mapValues',
-        //     commonjs2: 'lodash/mapValues',
-        //     amd: 'lodash/mapValues',
-        // },
-        // "lodash/includes": {
-        //     commonjs: 'lodash/includes',
-        //     commonjs2: 'lodash/includes',
-        //     amd: 'lodash/includes',
-        // },
-    },
+    externals: [
+        'react',
+        'lodash/mapValues',
+        'lodash/includes',
+        'lodash/noop',
+        'recompose/compose',
+        'recompose/mapProps',
+        'recompose/wrapDisplayName',
+        'recompose/setDisplayName',
+    ],
     module: {
         loaders: [
             {
