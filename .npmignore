@@ -1,4 +1,5 @@
 /src
 .babelrc
 .gitignore
+.idea
 webpack.config.js
